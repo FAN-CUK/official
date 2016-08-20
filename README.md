@@ -5,7 +5,7 @@
 sudo apt install nodejs-legacy npm git
 git clone https://github.com/FAN-CUK/official.git
 cd official
-sudo npm install webpack-dev-server webpack babel-cli cross-env nodemon apidoc npm3 -g
+sudo npm install webpack-dev-server webpack babel-cli cross-env nodemon apidoc npm3 bower -g
 npm3 install
 bower install
 cp .env.example .env
