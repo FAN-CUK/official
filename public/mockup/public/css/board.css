@@ -1,0 +1,12 @@
+﻿        .dropdown-menu li {
+            margin-left: 5%;
+        }
+
+        .file {
+            float:right;
+        }
+
+        .col-sm-8 {
+            margin: 0 auto;
+            float:none;
+        }

@@ -1,0 +1,12 @@
+body, ul, ol, li, h1, h2, h3, h4, h5, h6{margin: 0; padding: 0;}
+.col-center{margin: 0 auto; float: none;}
+.cl:after{clear:both; display:block; visibility:hidden; height:0; content:"."; font-size:0;}
+body{margin-top: 70px;}
+#title_kr{font-size: 35px;}
+#title_en{font-size: 15px; color: #6b6666;}
+#info_form{height: 350px;}
+#left_view{width: 30%; float: left; text-align: center;}
+#left_view #profile_pic{margin: 10px auto;}
+#left_view #user_level{font-size: 30px; width: 250px; margin: 0 auto; color: #000000;}
+#right_view{width: 70%; float: right; font-size: 30px; margin: 16px auto;}
+#buttons{text-align: center;}
