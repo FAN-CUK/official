@@ -10,7 +10,7 @@ class Main extends React.Component {
         <div className="container-fluid" id="main">
             <div className="row">
                 {/* page1 */}
-                <div className={classNames(css.main_official, css.parallax, "text-center")}>
+                <div id="page-top" className={classNames(css.main_official, css.parallax, "text-center")}>
                     <div className={classNames("col-sm-12", "text-center", css.mainText)}>
                         <p className={css.mainTitle}>F.A.N</p>
                         <a className={classNames("btn", css.mainbtn)} href="#freemeeting">ABOUT US</a>
