@@ -1,0 +1,134 @@
+
+.col_center {
+    margin: 0 auto;
+    float: none;
+}
+
+.parallax {
+    /* The image used */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/public/img/main.jpg');
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main home */
+.main_official {
+    position: relative;
+    height: 100%;
+}
+
+.mainText {
+    position:absolute;
+    top:40%;
+}
+
+.mainTitle {
+    font-size: 100px;
+    color: #cb181d;
+    font-weight: bold;
+}
+
+.mainbtn {
+    margin-top: 80px;
+    border : 1px solid #fee5d9;
+    border-round: 0;
+    background-color:transparent;
+    color: #fee5d9;
+    font-size: 20px;
+}
+
+.mainbtn:hover,
+.mainbtn:focus {
+    background-color: #fee5d9;
+    opacity: 0.5;
+}
+
+/* Free meeting 섹션 */
+.freemeeting {
+    height: 100%;
+    background: #feeae0;
+    padding-top: 60px;
+}
+.fmtext {
+    margin-left: 75px;
+}
+.f {
+    color: #cb181d;
+    font-size: 80px;
+    font-weight:700;
+}
+.reemeeting {
+    color: #da5d60;
+    font-size: 70px;
+    font-weight: 700;
+    -webkit-animation: type 4s steps(60, end);
+    -o-animation: type 4s steps(60, end);
+    animation: type 4s steps(60, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+.fmcontent {
+    margin-top: 30px;
+}
+.fmcontent img {
+    width: 100px;
+    height: 100px;
+}
+/* Active studying 섹션 */
+.activestudying {
+    height: 100%;
+    padding-top: 60px;
+}
+.astext {
+    margin-left: 75px;
+}
+.a {
+    color: #fb6a4a;
+    font-size: 80px;
+    font-weight:700;
+}
+.ctivestudying {
+    color: #fc9680;
+    font-size: 70px;
+    font-weight: 700;
+    -webkit-animation: type 4s steps(60, end);
+    -o-animation: type 4s steps(60, end);
+    animation: type 4s steps(60, end);
+}
+
+
+
+/* Nice ending 섹션 */
+.niceending {
+    height: 100%;
+    padding-top: 60px;
+}
+.netext {
+    margin-left: 75px;
+}
+.n {
+    color: #fcae91;
+    font-size: 80px;
+    font-weight:700;
+}
+.iceending {
+    color: #fcc6b2;
+    font-size: 70px;
+    font-weight: 700;
+    -webkit-animation: type 4s steps(60, end);
+    -o-animation: type 4s steps(60, end);
+    animation: type 4s steps(60, end);
+}
+
+
+

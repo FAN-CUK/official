@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+	     <!-- 합쳐지고 최소화된 최신 CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	    <!-- 부가적인 테마 -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	    <!-- Custom CSS -->
+		<link rel="stylesheet" href="./gallery.css">
+	    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>		<title>갤러리</title>
+	</head>
+	<body>
+		<div class = "col-sm-8 col-center">
+			<div id = "contents_menu">
+			    <ul class = "cl">
+			        <li><a href="#contents">전체</a></li>
+			        <li><a href="#contents">스터디</a></li>
+			        <li class="set"><a href="#contents">MT</a></li>
+			        <li><a href="#contents">기타활동</a></li>
+			    </ul>
+			</div>
+			<div class="jumbotron">
+				<div id = "jumbo_top" class="cl">
+					<h2 id="w_h2">MT 활동1</h2>
+					<button type="button" id="w_btn" class="btn btn-default">Write</button>
+				</div>
+				<div class="row" data-toggle="modal" data-target="#myModal">
+					<div class="cl col-md-3">
+					    <a href="#" class="thumbnail">
+							<img src="http://placehold.it/200x200"/>
+					    </a>
+					</div>
+					<div class="cl col-md-3">
+					    <a href="#" class="thumbnail">
+							<img src="http://placehold.it/200x200"/>
+					    </a>
+					</div>
+					<div class="cl col-md-3">
+					    <a href="#" class="thumbnail">
+							<img src="http://placehold.it/200x200"/>
+					    </a>
+					</div>
+					<div class="cl col-md-3">
+					    <a href="#" class="thumbnail">
+							<img src="http://placehold.it/200x200"/>
+					    </a>
+					</div>
+				</div>
+				<div class="row"  data-toggle="modal" data-target="#myModal">
+					<div class="cl col-md-3">
+					    <a href="#" class="thumbnail">
+							<img src="http://placehold.it/200x200"/>
+					    </a>
+					</div>
+					<div class="cl col-md-3">
+					    <a href="#" class="thumbnail">
+							<img src="http://placehold.it/200x200"/>
+					    </a>
+					</div>
+					<div class="cl col-md-3">
+					    <a href="#" class="thumbnail">
+							<img src="http://placehold.it/200x200"/>
+					    </a>
+					</div>
+					<div class="cl col-md-3">
+					    <a href="#" class="thumbnail">
+							<img src="http://placehold.it/200x200"/>
+					    </a>
+					</div>
+				</div>
+				<div class="row"  data-toggle="modal" data-target="#myModal">
+					<div class="cl col-md-3">
+					    <a href="#" class="thumbnail">
+							<img src="http://placehold.it/200x200"/>
+					    </a>
+					</div>
+					<div class="cl col-md-3">
+					    <a href="#" class="thumbnail">
+							<img src="http://placehold.it/200x200"/>
+					    </a>
+					</div>
+					<div class="cl col-md-3">
+					    <a href="#" class="thumbnail">
+							<img src="http://placehold.it/200x200"/>
+					    </a>
+					</div>
+					<div class="cl col-md-3">
+					    <a href="#" class="thumbnail">
+							<img src="http://placehold.it/200x200"/>
+					    </a>
+					</div>
+				</div>
+			</div>
+			<div id = "buttons">
+				<div class="btn-group btn-group-lg" role="group">	
+				    <button type="button" class="btn btn-default">1</button>
+				    <button type="button" class="btn btn-default">2</button>
+				    <button type="button" class="btn btn-default">3</button>
+				    <button type="button" class="btn btn-default">4</button>
+				  	<button type="button" class="btn btn-default">5</button>
+				</div>
+			</div>
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-body cl">
+							<div id="modal-left">
+								<img src="http://placehold.it/450x450"/>
+							</div>
+							<div id ="modal-right" class="cl">
+								<h1>2016 FAN MT</h1>
+								<hr style="margin: 0;">
+								<span id="T_day"><h3>2016.05.13</h3></span> <span id="T_time"><h3>07:00</h3></span>
+								<br><br><br><br><br>
+								댓글16
+								<hr style="margin: 0;">
+								<div class="cl">
+									<img style="float:left" src="http://placehold.it/25x25"/>
+									<span id="name">김소연14</span> <span id="day">16.05.13</span>
+									<div style="float: right;" class="input-group">
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">수정</a></li>
+											<li class="divider"></li>
+											<li><a href="#">삭제</a></li>
+										</ul>
+									</div><!-- /btn-group -->
+								</div>
+								<span id="reply">존나힘들다ㅅㅂ</span><br>
+								<hr style="color:#000000; border-style:dashed; margin: 0;">
+								<div class="cl">
+									<img style="float:left" src="http://placehold.it/25x25"/>
+									<span id="name">이소정14</span> <span id="day">16.05.13</span>
+									<div style="float: right;" class="input-group">
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">수정</a></li>
+											<li class="divider"></li>
+											<li><a href="#">삭제</a></li>
+										</ul>
+									</div><!-- /btn-group -->
+								</div>
+								<span id="reply">나도시바</span>
+								<hr style="color:#000000; border-style:dashed; margin: 0 0 10px 0;">
+								<div id="re_input" class="cl">
+									<img style="float:left; margin: 1px 5px 0 0;" src="http://placehold.it/30x30"/>
+									<div class="col-lg">
+									    <div class="input-group" aria-describedby="sizing-addon1">
+									    	<input type="text" class="form-control" placeholder="댓글">
+											<span class="input-group-btn">
+									        	<button class="btn btn-default" type="button">등록</button>
+											</span>
+								    	</div><!-- /input-group -->
+								  	</div><!-- /.col-lg-6 -->
+								</div>
+							</div>
+        				</div>
+      				</div>
+	  			</div>
+  			</div>
+		</div>
+	</body>
+</html>

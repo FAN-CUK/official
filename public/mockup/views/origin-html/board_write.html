@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="col-sm-8">
+
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">공지사항</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">자료실</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">자유게시판</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">질문게시판</button>
+            </div>
+        </div>
+           
+        <br />
+
+        <form class="form-horizontal">
+            <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="formGroupInputLarge">카테고리</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown">
+                            <button class="btn btn-default btn-sm" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                게시판 선택
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">공지사항</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">자료실</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">자유게시판</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">질문게시판</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-2 control-label" for="formGroupInputLarge">제목</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="formGroupInputLarge" placeholder="제목을 입력하세요">
+                    </div>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-2 control-label" for="formGroupInputSmall">첨부파일</label>
+                    <div class="col-sm-10">
+                        <button type="button" class="btn btn-default btn-xs">
+                            <span class="glyphicon glyphicon-picture" aria-hidden="true"></span> 사진
+                        </button>
+                        <button type="button" class="btn btn-default btn-xs">
+                            <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> 파일
+                        </button>
+                    </div>
+                </div>
+
+            <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="formGroupInputLarge"></label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" rows="20"></textarea>
+                </div>
+            </div>
+        
+        </form>
+
+
+        <div class="butn"> 
+            <button type="submit" class="btn btn-default btn-sm">작성취소</button>
+            <button type="submit" class="btn btn-default btn-sm">확인</button>
+        </div>
+
+</div>
+</body>
+</html>

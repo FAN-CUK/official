@@ -1,0 +1,13 @@
+﻿        .page {
+            text-align:center;
+        }
+        .kboard-search {
+            text-align:right;
+        }
+        .col-md-8 {
+            margin: 0 auto;
+            float:none;
+        }
+        .btn btn-default {
+            text-align:left;
+        }
