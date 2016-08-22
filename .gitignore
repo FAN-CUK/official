@@ -43,3 +43,6 @@ bower_components
 
 # dotenv
 .env
+
+# webstorm
+.idea
