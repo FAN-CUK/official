@@ -1,0 +1,15 @@
+﻿        #phonenumber {
+            width:20%;
+        }
+        #emailcheck {
+            width:25%;
+        }
+        #name,#number {
+            width:40%;
+        }
+        #inputpassword {
+            width:50%;
+        }
+        .dropdown {
+            display:inline;
+        }
