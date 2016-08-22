@@ -1,12 +1,46 @@
 import React from 'react';
-import { Navbar, NavItem, NavDropdown, MenuItem, Nav } from 'react-bootstrap';
 import FontAwesome from 'react-fontawesome';
 import classNames from 'classnames';
+import { Link } from 'react-router';
+import MenuItem from './MenuItem';
 
 import css from './Header.css';
 
-class Header extends React.Component {
+	class Header extends React.Component {
 	render() {
+		const c = [
+			{ name : "김수연조", boardId : 1 },
+			{ name : "유용우조", boardId : 2 },
+			{ name : "김소연조", boardId : 300 },
+			{ name : "이소정조", boardId : 45}
+		];
+		const cplus = [
+			{ name : "김수연조", boardId : 1 },
+			{ name : "유용우조", boardId : 2 },
+			{ name : "김소연조", boardId : 300 }
+		];
+		const web = [
+			{ name : "김수연조", boardId : 1 },
+			{ name : "유용우조", boardId : 2 },
+		];
+		const java = [
+			{ name : "김수연조", boardId : 1 },
+			{ name : "유용우조", boardId : 2 },
+			{ name : "김소연조", boardId : 300 },
+			{ name : "이소정조", boardId : 45},
+			{ name : "이종원조", boardId : 20}
+		];
+		const datastructure = [
+			{ name : "김수연조", boardId : 1 }
+		];
+		const mapToComponents = items => {
+			return items.map((item, idx) => {
+					return (
+						<MenuItem name={item.name} idx={item.boardId} key={idx} />
+					);
+				}
+			);
+		}
 		return(
 			<header>
 				<div className="container-fluid" id="header">
@@ -22,7 +56,7 @@ class Header extends React.Component {
 									<span className="icon-bar"></span>
 									<span className="icon-bar"></span>
 								</button>
-								<a className={classNames(css.logo, "page-scroll")} href="#page-top">F.A.N</a>
+								<Link className={classNames(css.logo, "page-scroll")} to='/#page-top'>F.A.N</Link>
 							</div>
 
 							{/* Collect the nav links, forms, and other content for toggling */}
@@ -34,7 +68,9 @@ class Header extends React.Component {
 										<ul className={classNames("dropdown-menu", css.mdd, css.boarddrop)}>
 											<li><a href="#">Notice</a></li>
 											<li><a href="#">Question</a></li>
-											<li><a href="#">Free Board</a></li>
+											<li>
+												<Link to='/board'>Free Board</Link>
+											</li>
 											<li><a href="#">Library</a></li>
 										</ul>
 									</li>
@@ -44,43 +80,31 @@ class Header extends React.Component {
 											<li className={css.st}>
 												<p className="text-center">C</p>
 												<ul className={classNames("text-center", css.studydbdrop)}>
-													<li><a href="#">1조</a></li>
-													<li><a href="#">2조</a></li>
-													<li><a href="#">3조</a></li>
-													<li><a href="#">4조</a></li>
+													{ mapToComponents(c) }
 												</ul>
 											</li>
 											<li className={css.st}>
 												<p className="text-center">C++</p>
 												<ul className={classNames("text-center", css.studydbdrop)}>
-													<li><a href="#">1조</a></li>
-													<li><a href="#">2조</a></li>
-													<li><a href="#">3조</a></li>
-													<li><a href="#">4조</a></li>
+													{mapToComponents(cplus)}
 												</ul>
 											</li>
 											<li className={css.st}>
 												<p className="text-center">Web</p>
 												<ul className={classNames("text-center", css.studydbdrop)}>
-													<li><a href="#">1조</a></li>
-													<li><a href="#">2조</a></li>
-													<li><a href="#">3조</a></li>
+													{ mapToComponents(web) }
 												</ul>
 											</li>
 											<li className={css.st}>
 												<p className="text-center">Java</p>
 												<ul className={classNames("text-center", css.studydbdrop)}>
-													<li><a href="#">1조</a></li>
-													<li><a href="#">2조</a></li>
-													<li><a href="#">3조</a></li>
-													<li><a href="#">4조</a></li>
+													{ mapToComponents(java) }
 												</ul>
 											</li>
 											<li className={css.st}>
 												<p className="text-center">자료구조</p>
 												<ul className={classNames("text-center", css.studydbdrop)}>
-													<li><a href="#">1조</a></li>
-													<li><a href="#">2조</a></li>
+													{ mapToComponents(datastructure) }
 												</ul>
 											</li>
 										</ul>
@@ -89,7 +113,7 @@ class Header extends React.Component {
 								</ul>
 								<ul className={classNames("nav", "navbar-nav", "navbar-right", css.loginInfo)}>
 									<li className="dropdown">
-										<a className="dropdown-toggle" data-toggle="dropdown" href="#"><span className="glyphicon glyphicon-user"></span>My Info</a>
+										<a className="dropdown-toggle" data-toggle="dropdown" href="#"><FontAwesome name="sign-in"/>My Info</a>
 										<div id="info_viewer" className={classNames("panel", "panel-info", "dropdown-menu")}>
 											<div className="panel-heading">
 												<h3 className="panel-title"><span id = "v_title_kr">정보</span> <span id = "v_title_en">My Info</span></h3>
