@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = utf-8>
+		<title>관리자 페이지</title>
+	     <!-- 합쳐지고 최소화된 최신 CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	    <!-- 부가적인 테마 -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	    <!-- Custom CSS -->
+		<link rel="stylesheet" href="../../public/css/master.css">
+	    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+	    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="col-center col-sm-8">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h1>회원 관리</h1>
+				</div>
+				<div class="panel-body">
+					<div id="left_view">
+						<h3>가입신청승인</h3><br>
+						<div id="check_list_view">
+							<div id="check_list">
+								<span id="grade">13학번</span><span id="name">데니스 리치</span>
+							</div>
+							<div id="check_list">
+								<span id="grade">12학번</span><span id="name">스티브 잡스</span>
+							</div>
+							<div id="check_list">
+								<span id="grade">12학번</span><span id="name">스티브 애즈니악</span>
+							</div>
+							<div id="check_list">
+								<span id="grade">10학번</span><span id="name">뉴턴</span>
+							</div>
+							<div id="check_list">
+								<span id="grade">11학번</span><span id="name">플라톤</span>
+							</div>
+							<div id="check_list">
+								<span id="grade">07학번</span><span id="name">소크라테스</span>
+							</div>
+							<div id="check_list">
+								<span id="grade">00학번</span><span id="name">공자</span>
+							</div>
+							<div id="check_list">
+								<span id="grade">99학번</span><span id="name">앨런 튜링</span>
+							</div>
+							<div id="check_list">
+								<span id="grade">14학번</span><span id="name">팀 쿡</span>
+							</div>
+							<div id="check_list">
+								<span id="grade">16학번</span><span id="name">오선식</span>
+							</div>
+						</div><br>
+						<button type="button" class="btn btn-success" style="float: left; margin-left: 30%;">승인</button>
+						<button type="button" class="btn btn-danger" style="float: right; margin-right: 30%;">거절</button>
+					</div>
+					<div id="right_view">
+						<h3>회원 등급</h3>
+						<br>
+						<div class="input-group" id="name_finder">
+							<input type="text" class="form-control" placeholder="이름으로 회원정보 조회...">
+							<span class="input-group-btn">
+							<button class="btn btn-default" type="button">검색!</button>
+							</span>
+						</div>
+						<br>
+						<h4 style="margin-left: 20px;">정보</h4>
+						<div class="panel-body">
+							<ul class="list-group">
+								<li class="list-group-item">이름 : ㅇㅁㅇ</li>
+								<li class="list-group-item">전공 : 컴공</li>
+								<li class="list-group-item">학번 : 123456789</li>
+								<li class="list-group-item">상태 : 휴학</li>
+								<li class="list-group-item"><a href="#"> 소속스터디 : C언어 </a></li>
+							</ul>
+							<div id="user_level" class="alert alert-info" role="alert">
+								회원등급 :
+								<select>
+									<option>admin</option>
+									<option>임원/재학생</option>
+									<option>재학생</option>
+								</select>
+							</div>
+						</div>
+						<button type="button" class="btn btn-success" style="float: left; margin-left: 30%;">수정</button>
+						<button type="button" class="btn btn-danger" style="float: right; margin-right: 30%;">취소</button>
+					</div>
+				</div>
+			</div>
+			<div id="study" class="cl">
+				<div id="left_view">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h1>스터디 관리</h1>
+							<h6>스터디 목록</h6>
+						</div>
+						<div class="panel-body">
+							<ul class="list-group">
+								<li class="list-group-item">C
+								<div class="btn-group">
+									<span data-toggle="dropdown" aria-expanded="false" class="glyphicon glyphicon-option-vertical" aria-hidden="true" style="float: right;"></span>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#" id="test_on">수정</a></li>
+										<li><a href="#">삭제</a></li>
+									</ul>
+								</div>
+								</li>
+								<li class="list-group-item">C++
+								<div class="btn-group">
+									<span data-toggle="dropdown" aria-expanded="false" class="glyphicon glyphicon-option-vertical" aria-hidden="true" style="float: right;"></span>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#" id="test_on">수정</a></li>
+										<li><a href="#">삭제</a></li>
+									</ul>
+								</div>
+								</li>
+								<li class="list-group-item">Java
+								<div class="btn-group">
+									<span data-toggle="dropdown" aria-expanded="false" class="glyphicon glyphicon-option-vertical" aria-hidden="true" style="float: right;"></span>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#" id="test_on">수정</a></li>
+										<li><a href="#">삭제</a></li>
+									</ul>
+								</div>
+								</li>
+								<li><span class="glyphicon glyphicon-plus"></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="right_view">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<span id="test_off" class="glyphicon glyphicon-remove" style="float: right"></span>
+							<h1>스터디 관리</h1>
+							<h6>스터디 조 배치</h6>
+						</div>
+						<div class="panel-body">
+							<ul class="list-group">
+								<li class="list-group-item">
+								<div class="btn-group">
+									<span data-toggle="dropdown" aria-expanded="false" id="group" aria-hidden="true" style="float: right;">C-1조</span>
+									<ul class="dropdown-menu" role="menu">
+										<li><a data-toggle="modal" data-target="#myModal" id="test_on">수정</a></li>
+										<li><a href="#">삭제</a></li>
+									</ul>
+								</div>
+								</li>
+								<li class="list-group-item">
+								<div class="btn-group">
+									<span data-toggle="dropdown" aria-expanded="false" id="group" aria-hidden="true" style="float: right;">C-2조</span>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#" id="test_on">수정</a></li>
+										<li><a href="#">삭제</a></li>
+									</ul>
+								</div>
+								</li>
+								<li class="list-group-item">
+								<div class="btn-group">
+									<span data-toggle="dropdown" aria-expanded="false" id="group" aria-hidden="true" style="float: right;">C-3조</span>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#" id="test_on">수정</a></li>
+										<li><a href="#">삭제</a></li>
+									</ul>
+								</div>
+								</li>
+								<li><span class="glyphicon glyphicon-plus"></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+							<h1 class="modal-title" id="myModalLabel">스터디 관리
+							<h3>C-1조<span class="glyphicon glyphicon-pencil"></span></h3></h1>
+							<h5>상세 스터디 관리</h5>
+						</div>
+						<div id="modal-body" class="modal-body">
+							<h3><span class="glyphicon glyphicon-education"></span>스터디장 : 김수연</h3>
+							<h4 style="text-align: right">스터디원</h4>
+							<ul class="list-group">
+								<li class="list-group-item">김소연</li>
+								<li class="list-group-item">김소정</li>
+								<li class="list-group-item">오선식</li>
+								<li><span class="buttons glyphicon glyphicon-plus" aria-hidden="true"></span></li>
+							</ul>
+						</div>
+						<div class="modal-footer">
+							<button style="float: left" type="button" class="btn btn-danger" data-dismiss="modal">스터디 삭제하기</button>
+							<button style="float: right" type="button" class="btn btn-primary">변경내용 저장</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	 <script>
+		$("#study #right_view").hide();
+		$("#test_off").click(function() {
+			$("#study #right_view").hide(500);
+		});
+		$( "#test_on" ).click(function() {
+			$( "#study #right_view" ).show(500);
+		});
+		</script>
+</html>

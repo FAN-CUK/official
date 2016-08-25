@@ -1,0 +1,24 @@
+body, ul, ol, li, h1, h2, h3, h4, h5, h6{margin: 0; padding: 0;}
+body {background:#f4f4f4;}
+.col-center.col-sm-8{background:#fff; margin-top:15px;border-radius:5px;padding-top:15px;}
+.col-center{margin: 0 auto; float: none;}
+.cl:after{clear:both; display:block; visibility:hidden; height:0; content:"."; font-size:0;}
+#left_view{float: left; width: 50%;}
+#left_view #check_list_view{width: 75%; height: 370px; border-style: solid; border-width: 2px; overflow: scroll; margin: 0 auto;}
+#left_view #check_list_view #check_list{height:70px; width: 100%; border-style: solid; border-width: 1px; border-color: #737373;}
+#left_view #check_list_view #check_list:hover{background-color: gray; color: white;}
+#left_view #check_list_view #check_list:active{border-color: red;}
+#left_view #check_list_view #check_list #grade{margin-left: 20px; font-size: 30px; line-height: 60px;}
+#left_view #check_list_view #check_list #name{margin-left: 20px; font-size: 25px; line-height: 65px;}
+#right_view{float: left; width: 50%;}
+#right_view #name_finder{width: 75%; margin: 0 auto;}
+#study .glyphicon:hover{color: gray; cursor:pointer;}
+#study #left_view .list-group-item {text-align:left;}
+#study #left_view .btn-group {float:right;}
+#study #left_view{float: left; width: 50%; padding-right: 5px;}
+#study #left_view ul{list-style: none; text-align: center;}
+#study #right_view{width: 50%; padding-left: 5px;}
+#study #right_view ul{list-style: none; text-align: center;}
+#study #right_view ul :hover{background-color: gray; color: white; cursor: pointer;}
+#modal-body ul{list-style: none; text-align: center;}
+.buttons :hover{color: gray cursor: pointer;}
