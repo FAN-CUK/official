@@ -41,6 +41,35 @@ import css from './Header.css';
 				}
 			);
 		}
+
+		const ifLoginState = (
+			<div>
+			<li className="dropdown">
+				<a className="dropdown-toggle" data-toggle="dropdown" href="#"><FontAwesome name="sign-in"/>My Info</a>
+				<div id="info_viewer" className={classNames("panel", "panel-info", "dropdown-menu")}>
+					<div className="panel-heading">
+						<h3 className="panel-title"><span id = "v_title_kr">정보</span> <span id = "v_title_en">My Info</span></h3>
+					</div>
+					<div className="panel-body">
+						<div id = "user_level" className="alert alert-info" role="alert">회원등급</div>
+						<ul className="list-group">
+							<li className="list-group-item">이름 : ㅇㅁㅇ</li>
+							<li className="list-group-item">전공 : 컴공</li>
+							<li className="list-group-item">학번 : 123456789</li>
+							<li className="list-group-item">상태 : 휴학</li>
+							<li className="list-group-item"><a href="#"> 소속스터디 : C언어 </a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">Logout</a></li>
+			</div>
+		);
+		const ifLogoutState = (
+			<li>
+				<Link to='/login'><FontAwesome name="sign-in"/> 로그인</Link>
+			</li>
+		);
 		return(
 			<header>
 				<div className="container-fluid" id="header">
@@ -112,25 +141,7 @@ import css from './Header.css';
 									<li><a href="#">Gallery</a></li>
 								</ul>
 								<ul className={classNames("nav", "navbar-nav", "navbar-right", css.loginInfo)}>
-									<li className="dropdown">
-										<a className="dropdown-toggle" data-toggle="dropdown" href="#"><FontAwesome name="sign-in"/>My Info</a>
-										<div id="info_viewer" className={classNames("panel", "panel-info", "dropdown-menu")}>
-											<div className="panel-heading">
-												<h3 className="panel-title"><span id = "v_title_kr">정보</span> <span id = "v_title_en">My Info</span></h3>
-											</div>
-											<div className="panel-body">
-												<div id = "user_level" className="alert alert-info" role="alert">회원등급</div>
-												<ul className="list-group">
-													<li className="list-group-item">이름 : ㅇㅁㅇ</li>
-													<li className="list-group-item">전공 : 컴공</li>
-													<li className="list-group-item">학번 : 123456789</li>
-													<li className="list-group-item">상태 : 휴학</li>
-													<li className="list-group-item"><a href="#"> 소속스터디 : C언어 </a></li>
-												</ul>
-											</div>
-										</div>
-									</li>
-									<li><a href="#">Logout</a></li>
+									{ this.props.isLoggedIn ? ifLoginState : ifLogoutState }
 								</ul>
 
 							</div>
@@ -145,6 +156,14 @@ import css from './Header.css';
 			</header>
 		);
 	}
+}
+
+Header.propTypes = {
+	isLoggedIn : React.PropTypes.bool
+}
+
+Header.defaultProps = {
+	isLoggedIn : false
 }
 
 export default Header;
